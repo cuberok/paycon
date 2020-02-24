@@ -1,32 +1,32 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+  <v-app>
+    <v-app-bar height="44" app color="#7bd01e" dark>
+      <a class="selfLink" href="/">Paycon</a>
+    </v-app-bar>
+    <v-content>
+      <router-view />
+    </v-content>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+export default {
+  name: "App",
 
-#nav {
-  padding: 30px;
+  components: {},
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+  data: () => ({
+    //
+  })
+};
+</script>
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+
+<style lang="scss" >
+.selfLink {
+  text-decoration: none;
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 20px;
 }
 </style>
