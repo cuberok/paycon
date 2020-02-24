@@ -13,7 +13,7 @@ const routes = [{
         },
     },
     {
-        path: "/transaction/succes",
+        path: "/transaction/success",
         name: "Succes",
         meta: {
             requiresAuth: true
