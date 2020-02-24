@@ -42,7 +42,7 @@ export default {
       locale: "ru",
       service_id: 288,
       ref: {
-        success_url: window.location.href + "transaction/succes",
+        success_url: window.location.href + "transaction/success",
         fail_url: window.location.href + "transaction/fail"
       }
     }
