@@ -5,7 +5,7 @@ import Form from "../views/Form.vue";
 Vue.use(VueRouter);
 
 const routes = [{
-        path: "/",
+        path: "/transaction",
         name: "Form",
         component: Form,
         meta: {
